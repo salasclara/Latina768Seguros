@@ -216,8 +216,12 @@
 
     /* RESPONSIVE */
     @media (max-width:960px) {
-      .hero-inner, .sobre-grid, .cotizar-inner, .contacto-inner { grid-template-columns:1fr; }
-      .hero-photo-wrap, .sobre-img-wrap { display:none; }
+      .hero-inner { grid-template-columns:1fr; }
+      .hero-inner > div:first-child { order:2; }
+      .hero-photo-wrap { order:1; max-width:340px; margin:0 auto 2rem; }
+      .sobre-grid, .cotizar-inner, .contacto-inner { grid-template-columns:1fr; }
+      .sobre-img-wrap { display:none; }
+      .hero-photo-wrap { display:block; }
       .testi-grid { grid-template-columns:1fr; }
       .seguros-grid { grid-template-columns:1fr 1fr; }
       .proceso-steps { grid-template-columns:1fr 1fr; }
@@ -421,8 +425,9 @@
       <div class="ghl-card-body">
         <div class="ghl-iframe-wrap">
           <iframe
-            src="https://api.leadconnectorhq.com/widget/form/bQ0jRzc7iAGe50nLOOkl"
-            id="inline-bQ0jRzc7iAGe50nLOOkl"
+            src="https://api.leadconnectorhq.com/widget/form/z2NPTwhOMDMD1xzsF9Bd"
+            style="width:100%;height:100%;border:none;border-radius:8px"
+            id="inline-z2NPTwhOMDMD1xzsF9Bd"
             data-layout='{"id":"INLINE"}'
             data-trigger-type="alwaysShow"
             data-trigger-value=""
@@ -432,8 +437,8 @@
             data-deactivation-value=""
             data-form-name="Form 1"
             data-height="520"
-            data-layout-iframe-id="inline-bQ0jRzc7iAGe50nLOOkl"
-            data-form-id="bQ0jRzc7iAGe50nLOOkl"
+            data-layout-iframe-id="inline-z2NPTwhOMDMD1xzsF9Bd"
+            data-form-id="z2NPTwhOMDMD1xzsF9Bd"
             title="Asesoría Gratuita - Clara Salas">
           </iframe>
         </div>
